@@ -32,4 +32,12 @@ function min(numbers){
     return currentSmallest;
 }
 
-console.log(min([1, 2, 3, 4]));
+let array = [1, 2, 3, 4, 5];
+function computeTheAverage (arr){
+    let sum = 0;
+    arr.forEach(function(element){
+        sum += element; 
+    });
+   return sum / array.length;
+}
+console.log(computeTheAverage(array));
