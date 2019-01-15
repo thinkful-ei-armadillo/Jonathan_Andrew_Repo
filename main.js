@@ -125,10 +125,10 @@ let arr = string.split(' ');
 
 const reduceString = arr.reduce(function(total, word) {
     if (word.length === 3) {
-        return ' ';
+        return console.log(' ');
     } else {
         let lastLetter = word.slice(word.length - 1);
-        return lastLetter.toUpperCase()
+        return console.log(lastLetter.toUpperCase())
     }
 }, '');
 
