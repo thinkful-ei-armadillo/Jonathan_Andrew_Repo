@@ -116,3 +116,20 @@ const loggedTurtle2 = turtleArray.forEach(function(element){
 });
 
 loggedTurtle2;
+
+const string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+/*[ 'noggin','oreo','the','moon','time','tele','steed','his','tent','apollo','her','lives','though','shoo','tofu','budapest' ]*/
+
+
+let arr = string.split(' ');
+
+const reduceString = arr.reduce(function(total, word) {
+    if (word.length === 3) {
+        return ' ';
+    } else {
+        let lastLetter = word.slice(word.length - 1);
+        return lastLetter.toUpperCase()
+    }
+}, '');
+
+console.log(reduceString)
